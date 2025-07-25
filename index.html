@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LP Confecções - Catálogo</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
   <header>
@@ -12,36 +16,108 @@
     <p>Roupas industriais de qualidade</p>
   </header>
 
-  <main>
+  <main class="main-content">
     <section class="catalogo">
-      <article class="produto">
-        <img src="imagens/camisa01.png" alt="Camisa Industrial Azul" />
-        <h2>Camisa Industrial Azul</h2>
-        <ul>
-          <li><strong>Cor:</strong> Azul</li>
-          <li><strong>Tipo:</strong> Camisa manga longa</li>
-          <li><strong>Tecido:</strong> Brim Leve</li>
-          <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-        </ul>
-      </article>
 
-      <article class="produto">
-        <img src="imagens/jaleco01.jpg" alt="Jaleco Branco" />
-        <h2>Jaleco Branco</h2>
-        <ul>
-          <li><strong>Cor:</strong> Branco</li>
-          <li><strong>Tipo:</strong> Jaleco tradicional</li>
-          <li><strong>Tecido:</strong> Oxford</li>
-          <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-        </ul>
-      </article>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <article class="produto">
+              <img src="imagens/camisa01.png" alt="Camisa Industrial Azul" />
+              <h2>Camisa Industrial Azul</h2>
+              <ul>
+                <li><strong>Cor:</strong> Azul</li>
+                <li><strong>Tipo:</strong> Camisa manga longa</li>
+                <li><strong>Tecido:</strong> Brim Leve</li>
+                <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+              </ul>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="produto">
+              <img src="imagens/camisa01.png" alt="Camisa Industrial Azul" />
+              <h2>Camisa Industrial Azul</h2>
+              <ul>
+                <li><strong>Cor:</strong> Azul</li>
+                <li><strong>Tipo:</strong> Camisa manga longa</li>
+                <li><strong>Tecido:</strong> Brim Leve</li>
+                <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+              </ul>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="produto">
+              <img src="imagens/camisa01.png" alt="Camisa Industrial Azul" />
+              <h2>Camisa Industrial Azul</h2>
+              <ul>
+                <li><strong>Cor:</strong> Azul</li>
+                <li><strong>Tipo:</strong> Camisa manga longa</li>
+                <li><strong>Tecido:</strong> Brim Leve</li>
+                <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+<!--        <div class="swiper-pagination"></div>-->
 
-      <!-- Você pode repetir mais blocos assim -->
+<!--        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+<!--        &lt;!&ndash; If we need scrollbar &ndash;&gt;-->
+<!--        <div class="swiper-scrollbar"></div>-->
+      </div>
+
+
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 LP Confecções. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.swiper', {
+
+        effect: "cards",
+        grabCursor: true,
+        // // slidesPerView: 1.2,
+        // // centeredSlides: false,
+        loop: true,
+        // // slidesPerView: "auto",
+        // // spaceBetween: 30,
+        // slidesPerView: 1.8,
+        // spaceBetween: 20,
+        // grabCursor: true,
+        // keyboard: {
+        //   enabled: true,
+        // },
+        // breakpoints: {
+        //   // 769: {
+        //   //   slidesPerView: 2,
+        //   //   slidesPerGroup: 2,
+        //   // },
+        // },
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
+
+    })
+  </script>
 </body>
 </html>
