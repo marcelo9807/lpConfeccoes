@@ -1,22 +1,77 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LP CONFECÇÕES</title>
-  <link rel="shortcut icon" href="imagens/Logo.jpeg" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LP Confecções - Roupas Industriais</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="imagens/Logo.jpeg" alt="logo">
-    <h2>Roupas industriais de qualidade</h2>
-  </header>
-  <main>
-  </main>
-  <footer>
-    <p>© 2025 LP Confecções. Todos os direitos reservados.</p>
 
+  <header>
+    <img src="imagens/Logo.jpeg" alt="Logo da LP Confecções">
+  </header>
+
+  <main>
+    <section class="carrossel" aria-labelledby="titulo-blusas">
+      <h2 id="titulo-blusas">Blusas Industriais</h2>
+      <div class="carrossel-container" id="carrossel-blusa">
+        <article class="produto ativo">
+          <img src="imagens/Jaqueta-masculina.jpeg"Blusa industrial azul tamanho P">
+          <ul>
+            <li><strong>Tecido:</strong> Brim</li>
+            <li><strong>Cor:</strong> Azul</li>
+            <li><strong>Tamanho:</strong> P</li>
+            <li><strong>Tipo:</strong> Blusa</li>
+          </ul>
+        </article>
+        <article class="produto">
+          <img src="imagens/Corta-vento- masculina.jpeg" alt="Blusa industrial azul tamanho M">
+          <ul>
+            <li><strong>Tecido:</strong> Brim</li>
+            <li><strong>Cor:</strong> Azul</li>
+            <li><strong>Tamanho:</strong> M</li>
+            <li><strong>Tipo:</strong> Blusa</li>
+          </ul>
+        </article>
+        <!-- Adicione mais tamanhos conforme necessário -->
+      </div>
+      <button onclick="voltar('carrossel-blusa')" aria-label="Voltar blusa">◀</button>
+      <button onclick="avancar('carrossel-blusa')" aria-label="Avançar blusa">▶</button>
+    </section>
+
+    <section class="carrossel" aria-labelledby="titulo-camisetas">
+      <h2 id="titulo-camisetas">Camisetas Industriais</h2>
+      <div class="carrossel-container" id="carrossel-camiseta">
+        <article class="produto ativo">
+          <img src="imagens/Camisa-vermelha.jpeg" alt="Camiseta cinza tamanho G">
+          <ul>
+            <li><strong>Tecido:</strong> Algodão</li>
+            <li><strong>Cor:</strong> Cinza</li>
+            <li><strong>Tamanho:</strong> G</li>
+            <li><strong>Tipo:</strong> Camiseta</li>
+          </ul>
+        </article>
+        <article class="produto">
+          <img src="imagens/Camisa-preta.jpeg" alt="Camiseta cinza tamanho GG">
+          <ul>
+            <li><strong>Tecido:</strong> Algodão</li>
+            <li><strong>Cor:</strong> Cinza</li>
+            <li><strong>Tamanho:</strong> GG</li>
+            <li><strong>Tipo:</strong> Camiseta</li>
+          </ul>
+        </article>
+        <!-- Adicione mais tamanhos conforme necessário -->
+      </div>
+      <button onclick="voltar('carrossel-camiseta')" aria-label="Voltar camiseta">◀</button>
+      <button onclick="avancar('carrossel-camiseta')" aria-label="Avançar camiseta">▶</button>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="https://lpconf.com.br" target="_blank" rel="noopener noreferrer">lpconf.com.br</a></p>
   </footer>
-  
+
+  <script src="script.js"></script>
 </body>
 </html>
