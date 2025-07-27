@@ -61,6 +61,7 @@ body {
   font-size: 1em;
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .catalogo-container {
@@ -87,6 +88,8 @@ body {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .produto h2 {
@@ -100,12 +103,7 @@ body {
   margin-bottom: 10px;
 }
 
-.produto ul {
-  list-style: none;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-}
-
+/* Botão link sem sublinhado */
 .contato-btn {
   padding: 10px 16px;
   background-color: #003366;
@@ -115,10 +113,13 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .contato-btn:hover {
   background-color: #0055aa;
+  text-decoration: none;
 }
 
 .swiper {
@@ -128,31 +129,47 @@ body {
   margin: auto;
 }
 
-/* Setas do Swiper - cinza claro e mais para fora */
+/* Setas do Swiper */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #555555; /* cinza escuro */
-  top: 50%;
-  width: 40px;
-  height: 40px;
   position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  color: #555;
   transform: translateY(-50%);
-  z-index: 10;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .swiper-button-prev {
-  left: -70px; /* mais para fora */
+  left: -25px;
 }
 
 .swiper-button-next {
-  right: -70px; /* mais para fora */
+  right: -25px;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: #555555;
-  font-size: 40px;
+  font-size: 30px;
+  color: #555;
+}
+
+/* Se quiser ajustar setas no mobile */
+@media (max-width: 480px) {
+  .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 24px;
+  }
 }
 
 .sobre {
