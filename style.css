@@ -2,15 +2,13 @@
   --swiper-navigation-color: #003366;
 }
 
-html, body {
-  height: 100%;
-}
-
+html,
 body {
-  font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -28,6 +26,7 @@ header {
   padding: 20px;
 }
 
+/* Centraliza todo o conteúdo dentro do card */
 .produto {
   background-color: white;
   border: 1px solid #ccc;
@@ -35,27 +34,34 @@ header {
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-size: 1em;
   width: 100%;
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .produto img {
   width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .produto h2 {
   font-size: 1.5em;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .produto ul {
   list-style: none;
   padding: 0;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 /* Tabela de medidas */
@@ -63,7 +69,7 @@ header {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .tabela-medidas th,
@@ -85,7 +91,7 @@ footer {
   padding: 10px;
 }
 
-/* Swiper ajustado */
+/* Swiper ajustes */
 .swiper {
   width: 500px;
   max-width: 90%;
@@ -101,8 +107,10 @@ footer {
 
 .swiper-button-prev {
   transform: translateX(-100px);
+  color: var(--swiper-navigation-color);
 }
 
 .swiper-button-next {
   transform: translateX(100px);
+  color: var(--swiper-navigation-color);
 }
