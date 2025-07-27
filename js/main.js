@@ -1,11 +1,14 @@
-document.querySelectorAll(".swiper").forEach((container) => {
-  new Swiper(container, {
+// Ativando todos os Swipers da página
+document.querySelectorAll(".swiper").forEach((el, index) => {
+  new Swiper(el, {
+    loop: true,
+    navigation: {
+      nextEl: el.querySelector(".swiper-button-next"),
+      prevEl: el.querySelector(".swiper-button-prev"),
+    },
     slidesPerView: 1,
     spaceBetween: 20,
-    navigation: {
-      nextEl: container.querySelector(".swiper-button-next"),
-      prevEl: container.querySelector(".swiper-button-prev"),
-    },
-    loop: true,
+    observer: true,
+    observeParents: true,
   });
 });

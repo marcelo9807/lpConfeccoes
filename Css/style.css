@@ -67,6 +67,7 @@ body {
 .catalogo-container {
   padding: 40px 20px;
   background-color: #f8f9fa;
+  overflow: visible; /* Para não cortar as setas */
 }
 
 .linha-catalogo {
@@ -88,8 +89,6 @@ body {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
-  position: relative;
-  z-index: 1;
 }
 
 .produto h2 {
@@ -129,34 +128,53 @@ body {
   margin: auto;
 }
 
-/* Setas do Swiper */
+/* Swiper Slide */
+.swiper-slide {
+  position: relative;
+  z-index: 0;
+}
+
+/* Setas do Swiper - cor preta clara forçada */
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: 30px;
-  height: 30px;
-  color: #555;
+  width: 40px;
+  height: 40px;
+  color: #666 !important; /* cor preta clara forçada */
+  fill: #666 !important;  /* para ícones SVG */
+  background: transparent !important; /* tira qualquer fundo */
   transform: translateY(-50%);
   cursor: pointer;
-  z-index: 9999;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #666 !important; /* mesma cor no hover */
+  fill: #666 !important;
 }
 
 .swiper-button-prev {
-  left: -25px;
+  left: 5px;
 }
 
 .swiper-button-next {
-  right: -25px;
+  right: 5px;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 30px;
-  color: #555;
+  font-size: 28px;
+  color: #666 !important;
+  font-weight: bold;
 }
 
-/* Se quiser ajustar setas no mobile */
+/* Ajuste para telas pequenas */
 @media (max-width: 480px) {
   .swiper-button-prev {
     left: 5px;
