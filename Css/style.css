@@ -60,6 +60,7 @@ body {
   border-radius: 5px;
   font-size: 1em;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .catalogo-container {
@@ -102,6 +103,22 @@ body {
 .produto ul {
   list-style: none;
   font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.contato-btn {
+  padding: 10px 16px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato-btn:hover {
+  background-color: #0055aa;
 }
 
 .swiper {
@@ -111,21 +128,31 @@ body {
   margin: auto;
 }
 
+/* Setas do Swiper - cinza claro e mais para fora */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #003366;
-  transform: translateY(-50%);
+  color: #555555; /* cinza escuro */
   top: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
 }
 
 .swiper-button-prev {
-  left: 5px;
+  left: -70px; /* mais para fora */
 }
 
 .swiper-button-next {
-  right: 5px;
+  right: -70px; /* mais para fora */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #555555;
+  font-size: 40px;
 }
 
 .sobre {

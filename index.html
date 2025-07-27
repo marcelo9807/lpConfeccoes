@@ -2,11 +2,198 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Catálogo de roupas industriais da LP Confecções. Qualidade e segurança em vestuário profissional." />
     <title>LP Confecções - Catálogo</title>
     <link rel="stylesheet" href="Css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #f4f6f8, #e0e6ed);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .topo {
+        background-color: #003366;
+        color: white;
+        padding-bottom: 30px;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 2em;
+        background-color: #002244;
+      }
+
+      .logo {
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: #00b894;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .catalogo-container {
+        padding: 40px 20px;
+        background-color: #f8f9fa;
+      }
+
+      .linha-catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .produto {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .produto img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .produto h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+
+      .produto p {
+        font-size: 0.95em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      /* Botão link sem sublinhado */
+      .contato-btn {
+        padding: 10px 16px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none; /* remove sublinhado */
+        display: inline-block;
+      }
+
+      .contato-btn:hover {
+        background-color: #0055aa;
+        text-decoration: none; /* mantém sem sublinhado */
+      }
+
+      .swiper {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #555; /* preto mais claro */
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+
+      .swiper-button-prev {
+        left: -25px; /* mais para fora da imagem */
+      }
+
+      .swiper-button-next {
+        right: -25px; /* mais para fora da imagem */
+      }
+
+      .sobre {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .sobre h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+      }
+
+      .footer-container {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+      }
+
+      .footer-container a {
+        color: #00b894;
+        text-decoration: none;
+      }
+
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        z-index: 999;
+      }
+    </style>
   </head>
   <body>
     <header class="topo">
@@ -26,8 +213,9 @@
 
     <main>
       <section id="catalogo" class="catalogo-container">
-        <!-- Quatro carrosseis com produtos -->
         <div class="linha-catalogo">
+
+          <!-- 1º Carrossel - 4 fotos -->
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -35,21 +223,55 @@
                   <img src="imagens/Camisa-azul.jpeg" alt="Camisa Azul" />
                   <h2>Camisa Azul</h2>
                   <p>Confortável e resistente para o dia a dia industrial.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Azul</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Camisa%20Azul."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="produto">
                   <img src="imagens/camisa-cinza.jpeg" alt="Camisa Cinza" />
                   <h2>Camisa Cinza</h2>
-                  <p>Design moderno com alta durabilidade.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Cinza</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <p>Variante com design diferente.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Camisa%20Cinza."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
+                  <h2>Camisa Preta</h2>
+                  <p>Design moderno e confortável.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Camisa%20Preta."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
+                  <h2>Camisa Vermelha</h2>
+                  <p>Variante para dias frios.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Camisa%20Vermelha."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
             </div>
@@ -57,61 +279,113 @@
             <div class="swiper-button-next"></div>
           </div>
 
-          <!-- Repetir 3x -->
+          <!-- 2º Carrossel - 4 fotos -->
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <article class="produto">
-                  <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
-                  <h2>Camisa Vermelha</h2>
+                  <img src="imagens/polo-azul.jpeg" alt="Polo Azul" />
+                  <h2>Polo Azul</h2>
                   <p>Alta visibilidade e resistência.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Vermelha</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Polo%20Azul."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="produto">
-                  <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
-                  <h2>Camisa Preta</h2>
-                  <p>Visual sóbrio com tecido reforçado.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Preta</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <img src="imagens/polo-cinza.jpeg" alt="Polo Cinza" />
+                  <h2>Polo Cinza</h2>
+                  <p>Variante para alta visibilidade.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Polo%20Cinza."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/polo-preta.jpeg" alt="Polo Preta" />
+                  <h2>Polo Preta</h2>
+                  <p>Design moderno e resistente.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Polo%20Preta."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/polo-vermelha.jpeg" alt="Polo Vermelha" />
+                  <h2>Polo Vermelha</h2>
+                  <p>Para uso diário intenso.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Polo%20Vermelha."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-          
 
-          <!-- +2 carrosséis com os mesmos ou novos produtos -->
-          <!-- Adicione conforme necessário -->
-            <div class="swiper">
+          <!-- 3º Carrossel - 3 fotos -->
+          <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <article class="produto">
-                  <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
-                  <h2>Camisa Vermelha</h2>
-                  <p>Alta visibilidade e resistência.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Vermelha</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <img src="imagens/Jaqueta-masculina.jpeg" alt="Jaqueta" />
+                  <h2>Jaqueta</h2>
+                  <p>Visual sóbrio com tecido reforçado.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Jaqueta."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="produto">
-                  <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
-                  <h2>Camisa Preta</h2>
-                  <p>Visual sóbrio com tecido reforçado.</p>
-                  <ul>
-                    <li><strong>Cor:</strong> Preta</li>
-                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
-                  </ul>
+                  <img src="imagens/Corta-vento- masculina.jpeg" alt="Corta Vento" />
+                  <h2>Corta Vento</h2>
+                  <p>Proteção contra vento e frio com tecido térmico confortável e resistente.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20no%20Corta%20Vento."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Microssoft.jpeg" alt="Blusa Microssoft" />
+                  <h2>Blusa Microssoft</h2>
+                  <p>Ideal para manter o corpo aquecido em ambientes frios e com vento intenso.</p>
+                  <a
+                    href="https://wa.me/5541988928537?text=Olá!%20Tenho%20interesse%20na%20Blusa%20Microssoft."
+                    class="contato-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fale Conosco</a
+                  >
                 </article>
               </div>
             </div>
@@ -119,7 +393,6 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
-        
       </section>
 
       <section id="sobre" class="sobre">
@@ -135,33 +408,16 @@
     <footer id="contato">
       <div class="footer-container">
         <p>&copy; 2025 LP Confecções. Todos os direitos reservados.</p>
-        <p>Contato: <a href="mailto:contato@lpconf.com.br">contato@lpconf.com.br</a></p>
+        <p>Contato: <a href="mailto:contato@lpconf.com.br">Luconfeccoes_29@hotmail.com</a></p>
       </div>
     </footer>
 
     <!-- WhatsApp Button -->
-    <a
-      href="https://wa.me/5541999999999"
-      class="whatsapp-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href="https://wa.me/5541988928537" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
       💬 Fale Conosco
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.querySelectorAll('.swiper').forEach((container) => {
-        new Swiper(container, {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: container.querySelector('.swiper-button-next'),
-            prevEl: container.querySelector('.swiper-button-prev'),
-          },
-          loop: true,
-        });
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
