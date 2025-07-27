@@ -3,390 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catálogo de roupas industriais da LP Confecções. Qualidade e segurança em vestuário profissional." />
     <title>LP Confecções - Catálogo</title>
     <link rel="stylesheet" href="Css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
-    <header>
-      <h1>LP Confecções</h1>
-      <p>Roupas industriais de qualidade</p>
+    <header class="topo">
+      <nav class="navbar">
+        <div class="logo">LP Confecções</div>
+        <ul class="nav-links">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Roupas Industriais com Qualidade e Segurança</h1>
+        <a href="#catalogo" class="btn">Ver Catálogo</a>
+      </div>
     </header>
-    <main class="main-content">
-      <section class="catalogo">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Produto 1 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-azul.jpeg" alt="Camisa Azul" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Azul</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
 
-            <!-- Produto 2 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/camisa-cinza.jpeg" alt="Camisa Cinza" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Cinza</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
+    <main>
+      <section id="catalogo" class="catalogo-container">
+        <!-- Quatro carrosseis com produtos -->
+        <div class="linha-catalogo">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-azul.jpeg" alt="Camisa Azul" />
+                  <h2>Camisa Azul</h2>
+                  <p>Confortável e resistente para o dia a dia industrial.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Azul</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/camisa-cinza.jpeg" alt="Camisa Cinza" />
+                  <h2>Camisa Cinza</h2>
+                  <p>Design moderno com alta durabilidade.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Cinza</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
             </div>
-
-            <!-- Produto 3 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Vermelha</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
-
-            <!-- Produto 4 com tabela -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Preta</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
 
-          <!-- Navegação -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- Repetir 3x -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
+                  <h2>Camisa Vermelha</h2>
+                  <p>Alta visibilidade e resistência.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Vermelha</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
+                  <h2>Camisa Preta</h2>
+                  <p>Visual sóbrio com tecido reforçado.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Preta</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          
+
+          <!-- +2 carrosséis com os mesmos ou novos produtos -->
+          <!-- Adicione conforme necessário -->
+            <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
+                  <h2>Camisa Vermelha</h2>
+                  <p>Alta visibilidade e resistência.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Vermelha</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="produto">
+                  <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
+                  <h2>Camisa Preta</h2>
+                  <p>Visual sóbrio com tecido reforçado.</p>
+                  <ul>
+                    <li><strong>Cor:</strong> Preta</li>
+                    <li><strong>Tamanhos:</strong> P, M, G, GG</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
+        
       </section>
-      <section class="catalogo">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Produto 1 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-azul.jpeg" alt="Camisa Azul" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Azul</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
 
-            <!-- Produto 2 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/camisa-cinza.jpeg" alt="Camisa Cinza" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Cinza</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
-
-            <!-- Produto 3 -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-vermelha.jpeg" alt="Camisa Vermelha" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Vermelha</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
-
-            <!-- Produto 4 com tabela -->
-            <div class="swiper-slide">
-              <article class="produto">
-                <img src="imagens/Camisa-preta.jpeg" alt="Camisa Preta" />
-                <h2>Camisa Industrial</h2>
-                <ul>
-                  <li><strong>Cor:</strong> Preta</li>
-                </ul>
-                <table class="tabela-medidas">
-                  <thead>
-                    <tr>
-                      <th>Tamanho</th>
-                      <th>Altura</th>
-                      <th>Largura</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P</td>
-                      <td>63cm</td>
-                      <td>47cm</td>
-                    </tr>
-                    <tr>
-                      <td>M</td>
-                      <td>66cm</td>
-                      <td>50cm</td>
-                    </tr>
-                    <tr>
-                      <td>G</td>
-                      <td>69cm</td>
-                      <td>53cm</td>
-                    </tr>
-                    <tr>
-                      <td>GG</td>
-                      <td>72cm</td>
-                      <td>56cm</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </div>
-          </div>
-
-          <!-- Navegação -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      <section id="sobre" class="sobre">
+        <div class="container">
+          <h2>Sobre a LP Confecções</h2>
+          <p>
+            A LP Confecções é especializada na produção de roupas industriais resistentes, confortáveis e adequadas às normas de segurança do trabalho. Atuamos no mercado com compromisso e qualidade.
+          </p>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 LP Confecções. Todos os direitos reservados.</p>
+    <footer id="contato">
+      <div class="footer-container">
+        <p>&copy; 2025 LP Confecções. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@lpconf.com.br">contato@lpconf.com.br</a></p>
+      </div>
     </footer>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/5541999999999"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💬 Fale Conosco
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const swiper = new Swiper(".swiper", {
-          effect: "cards",
-          grabCursor: true,
-          loop: true,
+      document.querySelectorAll('.swiper').forEach((container) => {
+        new Swiper(container, {
+          slidesPerView: 1,
+          spaceBetween: 20,
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: container.querySelector('.swiper-button-next'),
+            prevEl: container.querySelector('.swiper-button-prev'),
           },
+          loop: true,
         });
       });
     </script>
